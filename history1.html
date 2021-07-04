@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>FB歷史下載(城市B區)</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+    </head>
+    <body display="flex">
+        <font size="24">FB歷史下載(城市B區)</font>
+        <div>
+            <table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="number"  id="year"  style="width:60px">
+                            <input type="number"  id="month" style="width:60px">
+                            <input type="number"  id="day"   style="width:60px">
+                        </th>
+                        <th><input type="button" value="更新" onClick="up()"></th>
+                    </tr>
+                    <tr>
+                        <th>時間</th>
+                        <th>名稱</th>
+                        <th>備註</th>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody1">
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="history_app.js"></script>
+    <script> 
+    main_fun(1)
+    </script>
+</html> 
